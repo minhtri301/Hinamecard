@@ -1,0 +1,131 @@
+body{
+    background: #000000 !important;
+    font-family: Roboto !important;
+    font-size: 14px !important;
+    /* color: white !important; */
+}
+.card-max{
+   font-size: 14px !important;
+    background: rgb(255, 255, 255) !important;
+    border-top: 0px !important;
+}
+.card-max .text-center img{
+    width: 120px !important;
+    height: 120px !important;
+}
+.card-max .text-center img{
+    border: 1px solid #adb5bd;
+    background: white;
+    padding: 0px;
+}
+.card-max .card-body-style {
+    margin-bottom: 350px;
+}
+.card-max .card-footer-style img{
+    width: 100%;
+}
+.card-max .card-footer-style p{
+    margin-bottom: 3px;
+}
+
+.card-max .card-mystyle{
+    font-size: 14px !important;
+    margin-bottom: 8px !important;
+}
+.card-max .card-mystyle .card-body{
+    padding: 10px 12px !important;
+}
+.card-max .card-mystyle .card-body p{
+    font-weight: 600;
+    font-size: 14px;
+    color: #464646;
+    margin-left: 16px !important;
+    margin-top: 9px !important;
+}
+.card-max .card-mystyle .card-body .stick{
+    width: 15px !important;
+    height: 15px !important;
+    margin-left: 10px !important;
+    margin-top: 11px !important;
+}
+.card-max .card-mystyle .card-body .float-right{
+    margin-top: 10px !important;
+}
+.card-max ol{
+    color: #464646;
+    margin-left: -27px;
+    margin-top: -8px;
+    margin-bottom: -12px;
+}
+.card-max ol li{
+    margin-bottom: 3px;
+}
+.card-max ol li a{
+    color: red;
+    font-weight: 500;
+}
+.card-max .card-add .card-body{
+    padding: 10px 12px;
+    font-size: 13px;
+}
+.card-max .card-add .card-body img{
+    margin-top: 4px;
+}
+.card-max .card-add .card-body p{
+    font-size: 13px;
+    margin-left: 9px;
+    margin-top: 4px;
+}
+.card-max .footer3{
+    font-size: 14px !important;
+    background: #1F1F1F;
+}
+.card-max .footer3 a{
+    padding: 10px;
+    height: 42px;
+    color: #606060;
+    width: 100%;
+    font-size: 14px !important;
+    font-weight: 500;
+}
+.card-max .footer3 input{
+    height: 42px;
+    font-size: 14px !important;
+    width: 100%;
+    color: white;
+    border: 0px;
+    font-weight: 500;
+}
+.card-max .card-mystyle .dropdown-menu{
+    font-size: 14px !important;
+    top: -10px !important;
+    left: -135px !important;
+
+}
+.card-max .card-mystyle .dropdown-menu img{
+    margin-right: 7px;
+    margin-top: -3px;
+}
+.modal-content {
+    width: 68% !important;
+}
+.modal-dialog-centered{
+    justify-content: center !important;
+}
+.card-max h3 {
+    margin-top: 18px;
+    text-align: center;
+}
+.card-max h3 img {
+    margin-top: -4px;
+}
+.card-max b{
+    font-size: 14px;
+}
+.card-max .login-button{
+    background: white;
+    position: absolute !important;
+    border: none;
+    right: 10px;
+    top: 10px;
+}

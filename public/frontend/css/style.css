@@ -1,0 +1,531 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    min-height: 100vh;
+    padding: 0px;
+}
+.box-login {
+    width: 100%;
+    margin: auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    height: 815px;
+    max-height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.box-login .logo {
+    max-width: 270px;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.box-login-register {
+    position: relative;
+    bottom: -260px;
+}
+
+.box-login-register .login {
+    font-weight: 700;
+    font-size: 14px;
+    display: inline-block;
+    background-color: #ff0000;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px 100px;
+    margin-bottom: 16px;
+}
+.box-login-register .register {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px 100px;
+    color: white;
+}
+
+/*modal*/
+.modals {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/* .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+} */
+.modals .modal-content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal-content .modal-footer{
+    padding-right: 0px;
+    margin-bottom: -18px;
+}
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 380px;
+    border-radius: 4px;
+    position: relative;
+}
+.modal-content .header-modal button{
+    border: none;
+    background: white;
+}
+.modal-content .header-modal {
+    border-bottom: 1px solid #dedede;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-content .body-modal .form-group{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.modal.show .modal-dialog{
+    margin: auto;
+    max-width: 380px !important;
+}
+h5.title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 16px;
+    text-align: center;
+}
+form {
+    width: 100%;
+    margin-top: 16px;
+}
+form input {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #dedede;
+    padding: 10px;
+    text-align: center;
+}
+form button {
+    background: #ff0000;
+    border-radius: 4px;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border: 1px solid transparent;
+    margin-top: 16px;
+}
+.modal-content p {
+    text-align: center;
+    margin-top: 16px;
+}
+.modal-content p a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+}
+.support {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*avatar user*/
+
+.box-thong-tin-user {
+    justify-content: space-between;
+    align-items: center;
+}
+.img-avatar .avatar{
+    width: 180px ;
+    height: 180px; 
+    border-radius: 100px;
+}
+.img-avatar img {
+    display: block;
+    margin: 0 auto;
+}
+.img-avatar .file {
+    text-align: center;
+    position: relative;
+    top: -25px;
+}
+.img-avatar .file input {
+    display: none;
+    position: relative;
+    top: -45px;
+   
+}
+.img-avatar .file label{
+    border-radius: 112px;
+}
+.content {
+    color: white;
+    text-align: center;
+    margin-top: -10px;
+}
+.content h2.name {
+    font-weight: 500;
+    font-size: 20px;
+}
+.content p.desc {
+    font-weight: 400;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/*update-infomation*/
+
+.update-infomation {
+    height: auto;
+}
+.update-infomation .footer .btn-huy {
+    margin-top: 16px;
+    width: 100%;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    background-color: #dedede;
+    color: #606060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.update-infomation .footer .btn-preview {
+    margin-top: 16px;
+    width: 100%;
+    border: 1px solid #ff0000;
+    background: #fff;
+    color: #ff0000;
+}
+.update-infomation .footer .btn-save {
+    color: white;
+    background: #f00;
+    border-radius: 4px;
+}
+.update-infomation .list-group {
+    border: 1px dashed #ff0000;
+    background: #fff5f5;
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin-top: 16px;
+}
+.update-infomation .list-group li {
+    color: #000;
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+}
+.update-infomation .list-group li a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: 600;
+}
+.update-infomation .list-socal {
+    margin-top: 16px;
+}
+.update-infomation .list-socal li {
+    background-color: white;
+    margin-bottom: 8px;
+    padding: 10px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #464646;
+}
+.update-infomation .click-share {
+    color: #c2c2c2;
+    text-decoration: none;
+}
+.dropdow-editor {
+    left: -169px !important;
+    top: -14px !important;
+    width: 130px !important;
+    height: 95px !important;
+    padding: 13px !important;
+    border-radius: 8px !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 32px !important;
+}
+
+@media (max-width: 658px){
+    .dropdow-editor{
+        left: -21px !important;
+    }
+}
+
+.dropdow-editor li {
+    font-size: 13px;
+    margin-left: -3px;
+    color: #606060;
+    padding: 0px !important;
+}
+.dropdow-editor img{
+    margin-right: 10px;
+}
+
+/* modal-form*/
+
+.modal-form {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-form .modal-edit{
+    background-color: #fff!important;
+    padding: 1rem!important;
+    margin-top: 0!important;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    max-width: 350px;
+}
+.modal-form form {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    max-width: 350px;
+}
+
+/* preview*/
+
+.preview {
+    height: auto;
+    min-height: 815px;
+}
+.preview .content{
+    margin-top: 23px;
+}
+.preview .event{
+    background: #ff0000;
+    border-radius: 4px;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border: 1px solid transparent;
+    margin-top: 16px;
+}
+
+#get_add_icon img {
+    width: 46px;
+    height: 46px;
+    margin-top: -12px;
+    margin-bottom: -20px;
+    margin-left: -14px;
+}
+#get_add_icon .form-group{
+    gap: 0px;
+}
+#get_add_icon .modal-footer{
+    padding-top: 23px;
+}
+
+.right-setting{
+    position: absolute;
+    right: 26px;
+}
+.right-setting button{
+    border: none;
+    background: black;
+}
+.right-setting i {
+    color: #ffffff;
+}
+
+.select2-container--default .select2-selection--single{
+    height: 38px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    height: 38px !important;
+    padding-top: 4px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    margin-top: 5px !important;
+}
+
+form .logout{
+    background: #ff0000;
+    border-radius: 4px;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border: 1px solid transparent;
+    margin-top: 16px;
+}
+
+.logout:hover {
+    color: #ffffff;
+}
+
+.update-infomation .list-socal li .logo-icon{
+    width: 36px;
+    height: 36px;
+}
+
+.update-infomation .img-avatar{
+    position: relative;
+}
+.update-infomation .img-avatar a{
+    color: #ff5757;
+    position: absolute;
+    top: 0px;
+    font-size: 20px;
+    right: 25%;
+}
+
+/* modal share card */
+#share_qr .modal-content{
+    border-radius: 12px;
+    padding: 29px 20px 6px;
+}
+
+#share_qr .body-modal img{
+    width: 25vh;
+    height: 25vh;
+    border-radius: 20px;
+}
+#share_qr .form-group{
+    align-items: center;
+    margin-bottom: 20px !important;
+}
+
+#share_qr .body-modal label{
+    font-weight: 500;
+}
+
+#share_qr .body-modal button{
+   
+    background-color: #000;
+    font-weight: 700;
+    width: 40%;
+}
+
+#share_qr .body-modal .input-group button{
+    border-radius: 6px;
+    position: absolute;
+    width: 100%;
+    background-color: #f5f5f5;
+    font-weight: 600;
+}
+
+#share_qr .body-modal input{
+    font-weight: 700;
+    margin-top: 6px;
+    margin-left: 38px;
+    margin-bottom: 9px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#share_qr .body-modal .form-group .input-group a{
+    background: #f1ebeb;
+    text-decoration: none
+}
+
+#share_qr .header-modal{
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+#share_qr .header-modal h5{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#share_qr .header-modal button{
+    position: absolute;
+    right: -9px;
+    top: -29px;
+    background: none;
+}
+
+#share_qr{
+    transition: none;
+}
+
+.success-title{
+    margin: .5em 0em 0em 0.6em !important;
+    color:#89B76C !important;
+}
+.timer-success{
+    height: 0.3em!important;
+    background: #89B76C !important;
+}
+
+.error-title{
+    margin: .5em 0em 0em 0.6em !important;
+    color:#F38686 !important;
+}
+.timer-error{
+    height: 0.3em!important;
+    background: #F38686 !important;
+}
+.border-toast{
+    padding: 0.8em !important;
+}
+
